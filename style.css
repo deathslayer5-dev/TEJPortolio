@@ -1,8 +1,9 @@
-body{
+html{
     background-color: rgb(191, 209, 250);
     gap:10px 20px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -23,7 +24,7 @@ li a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a:hover{
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     background-color: #6394f5;
     text-decoration: underline;
 }
@@ -63,6 +64,13 @@ h1{
     color: white;
     text-shadow: 2px 2px 4px #000;
 }
+h2{
+    padding:5px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
 p{
     font-size: 1.6rem;
     text-align: center;
@@ -96,27 +104,74 @@ hr{
     color: #c7c7c7;
 }
 .sidebar{
+    background-color: rgb(230, 236, 252);
     margin: 150px 100px;
     padding: 5px 10px;
     height:fit-content;
     width: fit-content;
-    position:fixed;
+    position: fixed;
     z-index: 1;
-    top: 0;
+    top: 200px;
     left: 0;
-    background: #bbcae7;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.3rem;
 }
 .sidebar ul{
     list-style-type: none;
     padding: 5px;
 }
+.sidebar li:not(:last-child){
+    margin-bottom: 30px;
+}
 .navigation{
     border-radius: 10px;
     background-color: #93aee3;
-    font-size:1.3rem;
+    font-size:1.5rem;
     color: white;
     text-shadow: 2px 2px 4px #000;
     padding: 5px 5px;
+}
+.bubble{
+    margin:10px;
+    padding:10px 20px;
+    background-color: #819dcc;
+    text-align: center;
+    border-radius:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: fit-content;
+}
+.skills-grid{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.item{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #a2b7e5;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skills-title{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 1px 1px 4px #000;
+    margin-top:5px;
+    max-width:fit-content;
+    background-color: #819dcc;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 1.4rem;
+}
+.item ul{
+    list-style-type: none;
+    font-size:1.3rem;
+    text-shadow: 2px 2px 4px #888888;
+    padding: 5px 10px;
+}
+.item li{
+    padding:7px 0;
 }
