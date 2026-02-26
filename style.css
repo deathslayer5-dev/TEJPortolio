@@ -15,15 +15,26 @@ header{
     margin-bottom:20px;
 }
 li a{
+    padding:10px;
+}
+li a, button{
     text-decoration: none;
     list-style: none;
-    padding:10px;
     background-color: rgb(166, 190, 255);
     border-radius: 10px;
     max-width:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:none;
+    font-size:1.3rem;
 }
-a:hover{
+button a{
+    text-decoration: none;
+}
+button{
+    padding:10px;
+    align-items: center;
+}
+button:hover, a:hover{
     transition: 0.2s ease;
     background-color: #6394f5;
     text-decoration: underline;
@@ -174,4 +185,52 @@ hr{
 }
 .item li{
     padding:7px 0;
+}
+.work{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #758dc5;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.work:not(:last-child){
+    margin-bottom:20px;
+}
+.work hr{
+    color:#c7c7c7;
+    min-width:600px;
+}
+.text{
+    flex:1;
+    align-content: center;
+    justify-content: center;
+    background-color: #5b85d3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+.image{
+    max-width: 100%;
+    height: auto;
+    background-color: #6394f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.activity{
+    background-color: #859dd3;
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.activity:not(:last-child){
+    margin-bottom:30px;
 }
